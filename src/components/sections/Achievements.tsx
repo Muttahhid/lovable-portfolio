@@ -1,5 +1,14 @@
 
 import { motion } from "framer-motion";
+import { ZoomIn } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export const Achievements = () => {
   const achievements = [
@@ -32,6 +41,37 @@ export const Achievements = () => {
       organization: "Tech University",
       year: "2016",
       description: "Received honors for thesis on 'Scalable Architectures for Real-time Data Processing'."
+    }
+  ];
+
+  const certificates = [
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      year: "2021",
+      image: "/photo-1461749280684-dccba630e2f6",
+      description: "Professional certification validating expertise in designing distributed systems on AWS."
+    },
+    {
+      name: "Google Cloud Professional Developer",
+      issuer: "Google Cloud",
+      year: "2020",
+      image: "/photo-1487058792275-0ad4aaf24ca7",
+      description: "Advanced certification for building scalable applications on Google Cloud Platform."
+    },
+    {
+      name: "Certified Kubernetes Administrator",
+      issuer: "Cloud Native Computing Foundation",
+      year: "2019",
+      image: "/photo-1498050108023-c5249f4df085",
+      description: "Demonstrates proficiency in managing Kubernetes clusters in production environments."
+    },
+    {
+      name: "MongoDB Certified Developer",
+      issuer: "MongoDB Inc.",
+      year: "2018",
+      image: "/photo-1487058792275-0ad4aaf24ca7",
+      description: "Expert-level certification in MongoDB database development and optimization."
     }
   ];
 
@@ -76,25 +116,41 @@ export const Achievements = () => {
           <h2 className="text-2xl font-semibold mb-6 text-portfolio-red">Certifications</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">AWS Certified Solutions Architect</h3>
-              <p className="text-portfolio-lightText">Amazon Web Services | 2021</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">Google Cloud Professional Developer</h3>
-              <p className="text-portfolio-lightText">Google Cloud | 2020</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">Certified Kubernetes Administrator</h3>
-              <p className="text-portfolio-lightText">Cloud Native Computing Foundation | 2019</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">MongoDB Certified Developer</h3>
-              <p className="text-portfolio-lightText">MongoDB Inc. | 2018</p>
-            </div>
+            {certificates.map((cert, index) => (
+              <Dialog key={index}>
+                <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <div className="flex justify-between items-start mb-4">
+                    <div>
+                      <h3 className="font-semibold text-lg mb-1">{cert.name}</h3>
+                      <p className="text-portfolio-lightText">{cert.issuer} | {cert.year}</p>
+                    </div>
+                    <DialogTrigger asChild>
+                      <Button variant="ghost" size="icon" className="text-portfolio-red hover:text-portfolio-darkRed">
+                        <ZoomIn className="h-5 w-5" />
+                      </Button>
+                    </DialogTrigger>
+                  </div>
+                </div>
+                <DialogContent className="max-w-3xl w-[90vw]">
+                  <DialogHeader>
+                    <DialogTitle>{cert.name}</DialogTitle>
+                  </DialogHeader>
+                  <div className="mt-4">
+                    <div className="aspect-[1/1.414] relative rounded-lg overflow-hidden mb-4">
+                      <img
+                        src={cert.image}
+                        alt={cert.name}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <p className="font-medium text-portfolio-text">{cert.issuer} | {cert.year}</p>
+                      <p className="text-portfolio-lightText">{cert.description}</p>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
+            ))}
           </div>
         </div>
       </div>
