@@ -1,5 +1,6 @@
 
 import { motion } from "framer-motion";
+import { Award } from "lucide-react";
 
 export const Achievements = () => {
   const achievements = [
@@ -32,6 +33,33 @@ export const Achievements = () => {
       organization: "Tech University",
       year: "2016",
       description: "Received honors for thesis on 'Scalable Architectures for Real-time Data Processing'."
+    }
+  ];
+
+  const certificates = [
+    {
+      name: "AWS Certified Solutions Architect",
+      issuer: "Amazon Web Services",
+      year: "2021",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      name: "Google Cloud Professional Developer",
+      issuer: "Google Cloud",
+      year: "2020",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      name: "Certified Kubernetes Administrator",
+      issuer: "Cloud Native Computing Foundation",
+      year: "2019",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      name: "MongoDB Certified Developer",
+      issuer: "MongoDB Inc.",
+      year: "2018",
+      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
     }
   ];
 
@@ -73,28 +101,34 @@ export const Achievements = () => {
         </div>
         
         <div className="mt-12">
-          <h2 className="text-2xl font-semibold mb-6 text-portfolio-red">Certifications</h2>
+          <h2 className="flex items-center gap-2 text-2xl font-semibold mb-6 text-portfolio-red">
+            <Award className="h-6 w-6" />
+            Certifications
+          </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">AWS Certified Solutions Architect</h3>
-              <p className="text-portfolio-lightText">Amazon Web Services | 2021</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">Google Cloud Professional Developer</h3>
-              <p className="text-portfolio-lightText">Google Cloud | 2020</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">Certified Kubernetes Administrator</h3>
-              <p className="text-portfolio-lightText">Cloud Native Computing Foundation | 2019</p>
-            </div>
-            
-            <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <h3 className="font-semibold text-lg mb-1">MongoDB Certified Developer</h3>
-              <p className="text-portfolio-lightText">MongoDB Inc. | 2018</p>
-            </div>
+            {certificates.map((cert, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <div className="relative h-48">
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-portfolio-red bg-opacity-10 hover:bg-opacity-0 transition-opacity" />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-semibold text-lg mb-1 text-portfolio-text">{cert.name}</h3>
+                  <p className="text-portfolio-lightText">{cert.issuer} | {cert.year}</p>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>
