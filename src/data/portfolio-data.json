@@ -1,0 +1,122 @@
+
+{
+  "profile": {
+    "name": "John Developer",
+    "title": "Full-Stack Software Engineer",
+    "image": "/lovable-uploads/c7cb68dc-233d-441b-b840-0fd443bcdfcf.png",
+    "email": "hello@johndeveloper.com",
+    "phone": "+123 456 7890",
+    "location": "San Francisco, CA"
+  },
+  "about": {
+    "introduction": "I'm a dedicated software engineer with over 5 years of experience in developing web applications and scalable backend services. My journey in software development began when I was in college, building small projects that eventually grew into a passion for creating robust, user-friendly applications.",
+    "education": "I hold a Master's degree in Computer Science from Tech University, where I specialized in distributed systems and cloud computing. This educational background, combined with my professional experience, has equipped me with a strong foundation in both theoretical concepts and practical application development.",
+    "interests": "When I'm not coding, you can find me hiking in the mountains, reading about new technologies, or contributing to open-source projects. I believe in continuous learning and staying updated with the latest trends in the tech industry.",
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "company": "Tech Solutions Inc.",
+        "period": "2020 - Present",
+        "description": "Led the development of a microservices architecture that improved system reliability by 40%."
+      },
+      {
+        "title": "Software Developer",
+        "company": "WebCraft Studios",
+        "period": "2018 - 2020",
+        "description": "Developed and maintained multiple client websites and web applications using React and Node.js."
+      },
+      {
+        "title": "Junior Developer",
+        "company": "CodeLab",
+        "period": "2016 - 2018",
+        "description": "Started as an intern and grew into a full-time role, working on frontend development with JavaScript and CSS."
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Frontend",
+      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "Vue.js"]
+    },
+    {
+      "name": "Backend",
+      "skills": ["Node.js", "Express", "Python", "Django", "Go", "Java"]
+    },
+    {
+      "name": "Database",
+      "skills": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Firebase"]
+    },
+    {
+      "name": "DevOps",
+      "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux", "GitHub Actions"]
+    },
+    {
+      "name": "Tools",
+      "skills": ["Git", "VS Code", "Jira", "Figma", "Postman", "Jest"]
+    }
+  ],
+  "achievements": {
+    "highlights": [
+      {
+        "title": "Tech Innovation Award",
+        "organization": "Industry Tech Summit",
+        "year": "2022",
+        "description": "Recognized for developing an innovative AI-powered code review assistant that increased team productivity by 30%."
+      },
+      {
+        "title": "Open Source Contributor",
+        "organization": "React Ecosystem",
+        "year": "2021",
+        "description": "Contributed several key improvements to a popular React library with over 10k stars on GitHub."
+      },
+      {
+        "title": "Patent: Distributed Systems Optimization",
+        "organization": "US Patent Office",
+        "year": "2020",
+        "description": "Co-inventor of a patented method for optimizing data flow in distributed computing environments."
+      },
+      {
+        "title": "Conference Speaker",
+        "organization": "Multiple Tech Conferences",
+        "year": "2019-2022",
+        "description": "Delivered talks on microservices architecture, serverless technologies, and frontend performance optimization."
+      },
+      {
+        "title": "Master's Thesis Excellence",
+        "organization": "Tech University",
+        "year": "2016",
+        "description": "Received honors for thesis on 'Scalable Architectures for Real-time Data Processing'."
+      }
+    ],
+    "certificates": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuer": "Amazon Web Services",
+        "year": "2021",
+        "image": "/photo-1461749280684-dccba630e2f6",
+        "description": "Professional certification validating expertise in designing distributed systems on AWS."
+      },
+      {
+        "name": "Google Cloud Professional Developer",
+        "issuer": "Google Cloud",
+        "year": "2020",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Advanced certification for building scalable applications on Google Cloud Platform."
+      },
+      {
+        "name": "Certified Kubernetes Administrator",
+        "issuer": "Cloud Native Computing Foundation",
+        "year": "2019",
+        "image": "/photo-1498050108023-c5249f4df085",
+        "description": "Demonstrates proficiency in managing Kubernetes clusters in production environments."
+      },
+      {
+        "name": "MongoDB Certified Developer",
+        "issuer": "MongoDB Inc.",
+        "year": "2018",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Expert-level certification in MongoDB database development and optimization."
+      }
+    ]
+  }
+}

@@ -1,8 +1,10 @@
 
 import { motion } from "framer-motion";
+import { usePortfolioData } from "../../hooks/use-portfolio-data";
 
 export const Home = () => {
-  // Using staggered animations for child elements
+  const { profile } = usePortfolioData();
+
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -31,13 +33,13 @@ export const Home = () => {
           variants={itemVariants}
         >
           <span className="text-portfolio-red">Hello, I'm</span> <br />
-          John Developer
+          {profile.name}
         </motion.h1>
         <motion.h2 
           className="text-2xl md:text-3xl font-medium mb-8 text-portfolio-lightText"
           variants={itemVariants}
         >
-          Full-Stack Software Engineer
+          {profile.title}
         </motion.h2>
         <motion.p 
           className="text-lg md:text-xl mb-10 max-w-2xl text-portfolio-text"

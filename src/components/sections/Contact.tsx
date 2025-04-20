@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
-  Mail, Phone, MapPin, Linkedin, Github, Twitter 
-} from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { usePortfolioData } from "../../hooks/use-portfolio-data";
 
 export const Contact = () => {
+  const { profile } = usePortfolioData();
+
   return (
     <motion.div 
       className="min-h-screen py-16 px-8 md:px-16"
@@ -34,22 +35,22 @@ export const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="text-portfolio-red mr-3" />
-                  <a href="mailto:hello@johndeveloper.com" className="text-portfolio-text hover:text-portfolio-red">
-                    hello@johndeveloper.com
+                  <a href={`mailto:${profile.email}`} className="text-portfolio-text hover:text-portfolio-red">
+                    {profile.email}
                   </a>
                 </div>
                 
                 <div className="flex items-center">
                   <Phone className="text-portfolio-red mr-3" />
-                  <a href="tel:+1234567890" className="text-portfolio-text hover:text-portfolio-red">
-                    +123 456 7890
+                  <a href={`tel:${profile.phone}`} className="text-portfolio-text hover:text-portfolio-red">
+                    {profile.phone}
                   </a>
                 </div>
                 
                 <div className="flex items-center">
                   <MapPin className="text-portfolio-red mr-3" />
                   <p className="text-portfolio-text">
-                    San Francisco, CA
+                    {profile.location}
                   </p>
                 </div>
               </div>

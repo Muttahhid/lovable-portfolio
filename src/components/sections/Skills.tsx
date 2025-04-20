@@ -1,29 +1,9 @@
 
 import { motion } from "framer-motion";
+import { usePortfolioData } from "../../hooks/use-portfolio-data";
 
 export const Skills = () => {
-  const skillCategories = [
-    {
-      name: "Frontend",
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "Vue.js"]
-    },
-    {
-      name: "Backend",
-      skills: ["Node.js", "Express", "Python", "Django", "Go", "Java"]
-    },
-    {
-      name: "Database",
-      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Firebase"]
-    },
-    {
-      name: "DevOps",
-      skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux", "GitHub Actions"]
-    },
-    {
-      name: "Tools",
-      skills: ["Git", "VS Code", "Jira", "Figma", "Postman", "Jest"]
-    }
-  ];
+  const { skills } = usePortfolioData();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -64,7 +44,7 @@ export const Skills = () => {
           initial="hidden"
           animate="show"
         >
-          {skillCategories.map((category, index) => (
+          {skills.map((category, index) => (
             <motion.div key={index} className="mb-8" variants={itemVariants}>
               <h2 className="text-2xl font-semibold mb-4 text-portfolio-red">{category.name}</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ZoomIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { usePortfolioData } from "../../hooks/use-portfolio-data";
 import {
   Dialog,
   DialogContent,
@@ -11,69 +12,7 @@ import {
 } from "@/components/ui/dialog";
 
 export const Achievements = () => {
-  const achievements = [
-    {
-      title: "Tech Innovation Award",
-      organization: "Industry Tech Summit",
-      year: "2022",
-      description: "Recognized for developing an innovative AI-powered code review assistant that increased team productivity by 30%."
-    },
-    {
-      title: "Open Source Contributor",
-      organization: "React Ecosystem",
-      year: "2021",
-      description: "Contributed several key improvements to a popular React library with over 10k stars on GitHub."
-    },
-    {
-      title: "Patent: Distributed Systems Optimization",
-      organization: "US Patent Office",
-      year: "2020",
-      description: "Co-inventor of a patented method for optimizing data flow in distributed computing environments."
-    },
-    {
-      title: "Conference Speaker",
-      organization: "Multiple Tech Conferences",
-      year: "2019-2022",
-      description: "Delivered talks on microservices architecture, serverless technologies, and frontend performance optimization."
-    },
-    {
-      title: "Master's Thesis Excellence",
-      organization: "Tech University",
-      year: "2016",
-      description: "Received honors for thesis on 'Scalable Architectures for Real-time Data Processing'."
-    }
-  ];
-
-  const certificates = [
-    {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2021",
-      image: "/photo-1461749280684-dccba630e2f6",
-      description: "Professional certification validating expertise in designing distributed systems on AWS."
-    },
-    {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      year: "2020",
-      image: "/photo-1487058792275-0ad4aaf24ca7",
-      description: "Advanced certification for building scalable applications on Google Cloud Platform."
-    },
-    {
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      year: "2019",
-      image: "/photo-1498050108023-c5249f4df085",
-      description: "Demonstrates proficiency in managing Kubernetes clusters in production environments."
-    },
-    {
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB Inc.",
-      year: "2018",
-      image: "/photo-1487058792275-0ad4aaf24ca7",
-      description: "Expert-level certification in MongoDB database development and optimization."
-    }
-  ];
+  const { achievements } = usePortfolioData();
 
   return (
     <motion.div 
@@ -94,7 +33,7 @@ export const Achievements = () => {
         </p>
         
         <div className="space-y-8">
-          {achievements.map((achievement, index) => (
+          {achievements.highlights.map((achievement, index) => (
             <motion.div
               key={index}
               className="bg-white p-6 rounded-lg shadow-md border-l-4 border-portfolio-red"
@@ -116,7 +55,7 @@ export const Achievements = () => {
           <h2 className="text-2xl font-semibold mb-6 text-portfolio-red">Certifications</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {certificates.map((cert, index) => (
+            {achievements.certificates.map((cert, index) => (
               <Dialog key={index}>
                 <div className="bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                   <div className="flex justify-between items-start mb-4">
