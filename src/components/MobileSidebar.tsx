@@ -53,7 +53,7 @@ export const MobileSidebar = ({ activeSection, setActiveSection }: MobileSidebar
                 <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white mb-4">
                   <img src="/lovable-uploads/c7cb68dc-233d-441b-b840-0fd443bcdfcf.png" alt="Profile" className="w-full h-full object-cover" />
                 </div>
-                <h1 className="text-xl font-bold">John Developer</h1>
+                <h1 className="text-xl font-bold">Muttahhid Jomeer</h1>
                 <p className="text-xs opacity-80 mt-1">Full-Stack Software Engineer</p>
               </div>
 
@@ -80,7 +80,7 @@ export const MobileSidebar = ({ activeSection, setActiveSection }: MobileSidebar
               </nav>
 
               <div className="p-4 mt-auto">
-                <p className="text-sm opacity-70 text-center">© 2025 John Developer</p>
+                <p className="text-sm opacity-70 text-center">© 2025 Muttahhid Jomeer</p>
               </div>
             </div>
           </motion.div>

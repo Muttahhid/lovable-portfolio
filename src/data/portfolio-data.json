@@ -1,121 +1,153 @@
-
 {
   "profile": {
-    "name": "John Developer",
-    "title": "Full-Stack Software Engineer",
-    "image": "/lovable-uploads/c7cb68dc-233d-441b-b840-0fd443bcdfcf.png",
-    "email": "hello@johndeveloper.com",
-    "phone": "+123 456 7890",
-    "location": "San Francisco, CA"
+    "name": "Muttahhid Jomeer",
+    "title": "Senior Software Engineer",
+    "image": "/pp.png",
+    "email": "info@muttahhid.com",
+    "phone": "+230 59495913",
+    "location": "Port Louis, Mauritius"
   },
   "about": {
     "introduction": "I'm a dedicated software engineer with over 5 years of experience in developing web applications and scalable backend services. My journey in software development began when I was in college, building small projects that eventually grew into a passion for creating robust, user-friendly applications.",
-    "education": "I hold a Master's degree in Computer Science from Tech University, where I specialized in distributed systems and cloud computing. This educational background, combined with my professional experience, has equipped me with a strong foundation in both theoretical concepts and practical application development.",
+    "education": "I hold a Bachor's degree in Computing from British Computer Society, where I specialized in distributed systems, cloud computing and much more. This educational background, combined with my professional experience, has equipped me with a strong foundation in both theoretical concepts and practical application development.",
     "interests": "When I'm not coding, you can find me hiking in the mountains, reading about new technologies, or contributing to open-source projects. I believe in continuous learning and staying updated with the latest trends in the tech industry.",
-    "experience": [
-      {
-        "title": "Senior Software Engineer",
-        "company": "Tech Solutions Inc.",
-        "period": "2020 - Present",
-        "description": "Led the development of a microservices architecture that improved system reliability by 40%."
+    "experience": [{
+        "title": "Application Development Senior Analyst",
+        "company": "Accenture",
+        "period": "Jun 2024 - Present",
+        "description": "Led the design and architecture of complex solutions, bridging business needs with technical specifications. I mentored team members, promoted DevOps best practices, and proactively managed risks to deliver secure, high-quality software.  I also explored and piloted innovative AI technologies through POC projects."
       },
       {
-        "title": "Software Developer",
-        "company": "WebCraft Studios",
-        "period": "2018 - 2020",
-        "description": "Developed and maintained multiple client websites and web applications using React and Node.js."
+        "title": "Application Development Analyst",
+        "company": "Accenture",
+        "period": "Oct 2022 - May 2022",
+        "description": "Analyzed business requirements to design scalable Java solutions using frameworks like Spring and Hibernate, ensuring alignment with technical and business goals. Maintained high code quality through JUnit testing and streamlined deployments by building CI/CD pipelines with Jenkins. Actively involved in Agile processes, collaborated with cross-functional teams to deliver seamless solutions and led the implementation of new features and enhancements."
       },
       {
-        "title": "Junior Developer",
-        "company": "CodeLab",
-        "period": "2016 - 2018",
-        "description": "Started as an intern and grew into a full-time role, working on frontend development with JavaScript and CSS."
+        "title": "Web Engineer",
+        "company": "Nova Interaction",
+        "period": "Jun 2020 - Sept 2022",
+        "description": "Planned and developed websites by transforming mockups into functional web presences using HTML, JavaScript, CSS, and Joomla. Integrated third-party APIs, such as Microsoft Graph API and Zoho, through custom Joomla components, modules, and plugins, and managed efficient SQL queries and data transport. My responsibilities included overseeing computer operation scheduling, backup, and data management, as well as collaborating with web designers to deliver innovative UI designs. Trained and supervised team members, and led projects from initial research through testing and implementation phases, ensuring seamless delivery and alignment with business objectives"
+      },
+      {
+        "title": "Web Developer",
+        "company": "Nova Interaction",
+        "period": "Feb 2019 - May 2020",
+        "description": "Started as an intern and grew into a full-time role, working on frontend development with JavaScript and gradually learning backend technologies like PHP as well as server/database administration. Had various opportunities of exploring trending technologies like the AR/VR, machine learning algorithms and applying those concepts into prototypes."
       }
     ]
   },
-  "skills": [
-    {
+  "skills": [{
       "name": "Frontend",
-      "skills": ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS", "Vue.js"]
+      "skills": ["React", "JavaScript", "JQuery", "Angular", "Tailwind CSS", "HTML/CSS", "UIKit"]
     },
     {
       "name": "Backend",
-      "skills": ["Node.js", "Express", "Python", "Django", "Go", "Java"]
+      "skills": ["PHP", "Java", "Python"]
     },
     {
       "name": "Database",
-      "skills": ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Firebase"]
+      "skills": ["PostgreSQL", "MySQL", "ELK", "Spring Data"]
     },
     {
       "name": "DevOps",
-      "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux", "GitHub Actions"]
+      "skills": ["Docker", "AWS", "CI/CD", "Linux", "Jenkins", "Microservices"]
     },
     {
       "name": "Tools",
-      "skills": ["Git", "VS Code", "Jira", "Figma", "Postman", "Jest"]
+      "skills": ["Git", "VS Code", "Jira", "Figma", "Postman", "SoapUI", "Eclipse", "IntelliJ", "Tomcat"]
     }
   ],
   "achievements": {
-    "highlights": [
-      {
-        "title": "Tech Innovation Award",
-        "organization": "Industry Tech Summit",
-        "year": "2022",
-        "description": "Recognized for developing an innovative AI-powered code review assistant that increased team productivity by 30%."
+    "highlights": [{
+        "title": "Introduction to IOT driven Home and Industrial Automation using Raspberry Pi",
+        "organization": "Mauritius Research Council",
+        "year": "2017",
+        "description": "Achieving prototypes with sensors and raspberry pi with python"
       },
       {
-        "title": "Open Source Contributor",
-        "organization": "React Ecosystem",
-        "year": "2021",
-        "description": "Contributed several key improvements to a popular React library with over 10k stars on GitHub."
-      },
-      {
-        "title": "Patent: Distributed Systems Optimization",
-        "organization": "US Patent Office",
-        "year": "2020",
-        "description": "Co-inventor of a patented method for optimizing data flow in distributed computing environments."
-      },
-      {
-        "title": "Conference Speaker",
-        "organization": "Multiple Tech Conferences",
-        "year": "2019-2022",
-        "description": "Delivered talks on microservices architecture, serverless technologies, and frontend performance optimization."
-      },
-      {
-        "title": "Master's Thesis Excellence",
-        "organization": "Tech University",
-        "year": "2016",
-        "description": "Received honors for thesis on 'Scalable Architectures for Real-time Data Processing'."
+        "title": "Google Code-in",
+        "organization": "Google",
+        "year": "2017",
+        "description": "Contributed key improvements to a popular library - Ubuntu."
       }
     ],
-    "certificates": [
-      {
-        "name": "AWS Certified Solutions Architect",
-        "issuer": "Amazon Web Services",
-        "year": "2021",
-        "image": "/photo-1461749280684-dccba630e2f6",
-        "description": "Professional certification validating expertise in designing distributed systems on AWS."
-      },
-      {
-        "name": "Google Cloud Professional Developer",
-        "issuer": "Google Cloud",
-        "year": "2020",
-        "image": "/photo-1487058792275-0ad4aaf24ca7",
-        "description": "Advanced certification for building scalable applications on Google Cloud Platform."
-      },
-      {
-        "name": "Certified Kubernetes Administrator",
-        "issuer": "Cloud Native Computing Foundation",
+    "certificates": [{
+        "name": "Cybrary - Penetration Testing and Ethical Hacking",
+        "issuer": "Cybrary",
         "year": "2019",
-        "image": "/photo-1498050108023-c5249f4df085",
-        "description": "Demonstrates proficiency in managing Kubernetes clusters in production environments."
+        "image": "/photo-1461749280684-dccba630e2f6",
+        "description": "Professional certification validating expertise Penetration Testing and Ethical Hacking"
       },
       {
-        "name": "MongoDB Certified Developer",
-        "issuer": "MongoDB Inc.",
+        "name": "Micro Certification - Fundamental Cryptography",
+        "issuer": "Cybrary",
         "year": "2018",
         "image": "/photo-1487058792275-0ad4aaf24ca7",
-        "description": "Expert-level certification in MongoDB database development and optimization."
+        "description": "Foundation Course for undestanding different concepts of Cryptography."
+      },
+      {
+        "name": "Cybrary - Introduction to SQL",
+        "issuer": "Cybrary",
+        "year": "2019",
+        "image": "/photo-1498050108023-c5249f4df085",
+        "description": "Demonstrates proficiency SQL development and optimization."
+      },
+      {
+        "name": "Cybrary - CompTIA Cloud +",
+        "issuer": "Cybrary",
+        "year": "2019",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Expert-level Course for undestanding different concepts of Cloud Computing."
+      },
+      {
+        "name": "Cybrary - Intermediate Cloud Security",
+        "issuer": "Cybrary",
+        "year": "2019",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Intermediate-level Course for undestanding different concepts of Cloud Security."
+      },
+      {
+        "name": "NGD Linux Unhatched",
+        "issuer": "Cybrary",
+        "year": "2022",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Foundation Course for undestanding linux commands and file systems."
+      },
+      {
+        "name": "Huawei Certified ICT Associate",
+        "issuer": "Huawei",
+        "year": "2022",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Expert-level Course for undestanding different concepts of Cloud Computing Using Huawei Cloud Softwares."
+      },
+      {
+        "name": "Cisco CyberOps Associate",
+        "issuer": "Cisco",
+        "year": "2022",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "Expert-level Course for undestanding different concepts of CyberSecurity Operations."
+      },
+      {
+        "name": "BCS Level 4 Certificate in IT",
+        "issuer": "British Computer Society",
+        "year": "2018",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "---"
+      },
+      {
+        "name": "BCS Level 5 Diploma in IT",
+        "issuer": "British Computer Society",
+        "year": "2019",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "---"
+      },
+      {
+        "name": "BCS Level 6 Professional Graduate Diploma in IT",
+        "issuer": "British Computer Society",
+        "year": "2019",
+        "image": "/photo-1487058792275-0ad4aaf24ca7",
+        "description": "---"
       }
     ]
   }

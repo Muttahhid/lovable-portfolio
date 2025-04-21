@@ -57,7 +57,7 @@ export const Sidebar = ({ activeSection, setActiveSection }: SidebarProps) => {
       </nav>
 
       <div className="p-4 mt-auto">
-        <p className="text-sm opacity-70 text-center">© 2025 John Developer</p>
+        <p className="text-sm opacity-70 text-center">© 2025 Muttahhid Jomeer</p>
       </div>
     </motion.div>
   );
